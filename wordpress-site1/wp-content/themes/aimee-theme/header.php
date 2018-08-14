@@ -27,7 +27,7 @@
         <a class="text-muted" href="#">Subscribe</a>
         </div>
         <div class="col-4 text-center">
-        <a class="blog-header-logo text-dark" href="#">Large</a>
+        <a class="blog-header-logo text-dark" href="#">Hello World</a>
         </div>
         <div class="col-4 d-flex justify-content-end align-items-center">
         <a class="text-muted" href="#">
@@ -38,22 +38,28 @@
     </div>
     </header>
 
-    <div class="nav-scroller py-1 mb-2">
-    <nav class="nav d-flex justify-content-between">
-        <a class="p-2 text-muted" href="#">World</a>
-        <a class="p-2 text-muted" href="#">U.S.</a>
-        <a class="p-2 text-muted" href="#">Technology</a>
-        <a class="p-2 text-muted" href="#">Design</a>
-        <a class="p-2 text-muted" href="#">Culture</a>
-        <a class="p-2 text-muted" href="#">Business</a>
-        <a class="p-2 text-muted" href="#">Politics</a>
-        <a class="p-2 text-muted" href="#">Opinion</a>
-        <a class="p-2 text-muted" href="#">Science</a>
-        <a class="p-2 text-muted" href="#">Health</a>
-        <a class="p-2 text-muted" href="#">Style</a>
-        <a class="p-2 text-muted" href="#">Travel</a>
+  <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Hello World</a>
+                <?php 
+                wp_nav_menu( array(
+                'theme_location'  => 'primary',
+                'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
+                'container'       => 'div',
+                'container_class' => 'collapse navbar-collapse',
+                'container_id'    => 'bs-example-navbar-collapse-1',
+                'menu_class'      => 'nav navbar-nav',
+                'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                'walker'          => new WP_Bootstrap_Navwalker(),
+                ) );
+                ?>
+        </div>
     </nav>
-    </div>
+  
 
     <!-- JUMBOTRON -->
      <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">

@@ -173,3 +173,56 @@ Text Domain: aimee-tacchi
     padding: 15px;
     border: #ccc 1px solid;
   }
+
+  .post-thumb img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Comments */
+  .comments {
+    border: 1px solid grey;
+    padding: 1em;
+    margin: 1em 0;
+  }
+  .comment {
+    list-style: none;
+    background-color: silver;
+  }
+  .comment h2, .comment h3 {
+    background: #d3d3de;
+    padding: 1em;
+    margin: 0;
+  }
+
+  .comment-content {
+    border: 2px solid grey;
+    padding: 1em;
+    margin: 0 0 1em 0;
+  }
+
+  .comment-meta {
+    padding: 3em 1em;
+    background-color: pink;
+    color: white;
+  }
+  
+  .comment-meta img {
+    float: left;
+    margin: 0 0 0 1em;
+  }
+
+  .comment-reply-link {
+    background-color: plum;
+    display: inline-block;
+    padding: 1em 1.5em;
+  }
+
+  .comment-form input, .comment-form textarea {
+    width: 100%;
+    padding: 2em;
+    border: 1px solid grey;
+    margin: 0 0 1em 0;
+  }
